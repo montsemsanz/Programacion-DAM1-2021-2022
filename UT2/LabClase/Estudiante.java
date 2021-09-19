@@ -67,7 +67,7 @@ public class Estudiante
     
     
     /**
-     * Escribir el nombre del estudiante en la consola
+     * Mostrar el nombre del estudiante en la consola
      */
     public void print()  {
         System.out.println(nombre + " (" + id + ")");
