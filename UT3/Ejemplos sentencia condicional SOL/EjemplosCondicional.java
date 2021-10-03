@@ -315,8 +315,7 @@ public class EjemplosCondicional
             diasMes = -1;
         }
         else    {
-            switch  (mes) 
-            {
+            switch  (mes)  {
                 case 1:
                 case 3:
                 case 5:
@@ -331,6 +330,42 @@ public class EjemplosCondicional
                 case 11:   diasMes = 30;
                     break;
                 default:
+                    if (año % 4 == 0)  {   // es bisiesto
+                        diasMes = 29;
+                    }
+                    else  {
+                        diasMes = 28;
+                    }
+                    break;
+
+            }
+
+        }
+        return diasMes;
+
+    }
+
+    /**
+     *  Calcula y devuelve los dis del mes indicado
+     *  Para el mes febrero habrá que tener en cueta si año es o no bisiesto
+     *  (múltiplo de 4)
+     *  Si el mes es incorrecto devolver -1
+     *
+     */
+    public int calcularDiasMesConSwitchV2(int mes, int año)
+    {
+        int diasMes = 31;
+        if (mes < 1 || mes > 12)   {   // mes incorrecto
+            diasMes = -1;
+        }
+        else    {
+            switch  (mes)  {
+                case 4:
+                case 6:
+                case 9:
+                case 11:   diasMes = 30;
+                    break;
+                case 2:
                     if (año % 4 == 0)  {   // es bisiesto
                         diasMes = 29;
                     }
@@ -516,6 +551,5 @@ public class EjemplosCondicional
         }
         return strNota;
     }
-
 
 }
