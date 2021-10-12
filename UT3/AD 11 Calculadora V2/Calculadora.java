@@ -35,7 +35,7 @@ public class Calculadora
         if (numero > maximo)  {
             maximo = numero;
         }
-        else if (numero < minimo)  {
+        if (numero < minimo)  {
             minimo = numero;
         }
 
