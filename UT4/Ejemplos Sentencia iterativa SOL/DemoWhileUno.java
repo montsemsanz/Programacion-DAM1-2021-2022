@@ -492,11 +492,7 @@ public class DemoWhileUno
             cuantos++;
         }
 
-        
-
     }
-
-   
 
     /**
      * Generar 10 nºs aleatorios entre 5 y 50 incluidos
@@ -774,6 +770,57 @@ public class DemoWhileUno
             contador ++;
         }
         return s;
+
+    }
+
+    /**
+     *  
+     * Ejemplo validar un número     
+     */
+    public void demoValidarNumeroConWhile() {
+        System.out.println("Dame nº");
+        int n = teclado.nextInt();
+        while (n <= 0) {
+            System.out.println("Dame nº");
+            n = teclado.nextInt();
+        }
+
+    }
+
+    /**
+     *  
+     * Ejemplo validar un número     
+     */
+    public void demoValidarNumeroConWhileV2() {
+
+        int n = leerNumero();
+        while (n <= 0) {
+             n = leerNumero();
+        }
+
+    }
+
+    /**
+     *       
+     */
+    public int leerNumero() {
+        System.out.println("Dame nº");
+        int n = teclado.nextInt();
+        return n;
+    }
+
+    /**
+     *  
+     * Ejemplo validar un número     
+     */
+    public void demoValidarNumeroConDoWhile() {
+
+        int n;
+        do {
+            System.out.println("Dame nº");
+            n = teclado.nextInt();
+        }
+        while (n <= 0);
 
     }
 
