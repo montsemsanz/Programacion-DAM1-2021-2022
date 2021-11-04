@@ -343,39 +343,5 @@ public class DemoFor
         }
     }
 
-    /**
-     *  
-     *
-     * @param  
-     * @return      
-     */
-    public static int sumatorio(int n) {
-        int suma = 0;
-        for (int i = 1; i <= n; i++) {
-            suma += i;
-
-        }
-        return suma;
-
-    }
-
-    /**
-     *  
-     *
-     * @param  
-     * @return      
-     */
-    public static void generarAleatorios() {
-        int aleatorio = (int)(Math.random() * 11);
-        while (aleatorio != 0) {
-            int suma = 0;
-            for (int i = 1; i <= aleatorio; i++) {
-                suma += i;
-
-            }
-            System.out.println("Sumatorio = " + suma);
-            aleatorio = (int)(Math.random() * 11);
-        }
-
-    }
+   
 }
