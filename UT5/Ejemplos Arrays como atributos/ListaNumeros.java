@@ -103,6 +103,9 @@ public class ListaNumeros
 
     /**
      *  Búsqueda binaria con Array.binarySearch()
+     *  Prerequisito el array numeros debe estar ordenado
+     *  (o hemos insertado en orden o 
+     *  hemos llamado a Arrays.sort(numeros, 0 , pos); )
      *
      */
     public boolean buscarBinario(int valor)    {
