@@ -279,7 +279,7 @@ public class UT5EjerArrays
      */
     public static int[] puente03(int[] numeros, int a, int b)    {
         int[] copiaOrdenada;
-        if (a < 0 || b > numeros.length) {
+        if (a < 0 || b >= numeros.length || a > b) {
             copiaOrdenada = new int[numeros.length];
             Arrays.fill(copiaOrdenada, -1);
         }
