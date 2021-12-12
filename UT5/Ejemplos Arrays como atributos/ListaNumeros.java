@@ -223,23 +223,6 @@ public class ListaNumeros
         }
     }
 
-    /**
-     * Borrar varios elementos - sale bien
-     */
-    public void borrarImparesConForIterador()    {
-        int[] valores = new int[]{1,2,3,5,7,9,12};
-        ArrayList<Integer> lista = new ArrayList<Integer>();
-        for (int i = 0; i < valores.length; i++) {
-            lista.add(valores[i]);
-
-        }
-        for (Iterator<Integer> it = lista.iterator(); it.hasNext(); )  {
-            Integer i = it.next();
-            if (i % 2 != 0) {
-                it.remove();
-            }
-        }
-        System.out.println(lista.toString());
-    }
+    
 
 }
