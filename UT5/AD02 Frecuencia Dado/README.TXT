@@ -1,0 +1,2 @@
+Frecuencia dado
+
