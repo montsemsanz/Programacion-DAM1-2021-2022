@@ -380,7 +380,7 @@ public class Cadena
      *  Contar las palabras de cadena, el separador entre palabras es
      *  el carácter SEPARADOR
      *  Mejorado - con expresión regular (":+") reemplazando
-     *  los posibles primeros separados por ""
+     *  los posibles primeros caracteres : separados por ""
      */
     public int numeroPalabrasV2()   {
         String regExp = SEPARADOR + "+";
@@ -393,8 +393,7 @@ public class Cadena
      /**
      *  Contar las palabras de cadena, el separador entre palabras es
      *  ahora el carácter ESPACIO
-     *  Mejorado - con expresión regular ("\\s+") reemplazando
-     *  los posibles primeros separados por ""
+     *  Mejorado - con expresión regular ("\\s+") 
      */
     public int numeroPalabrasV3()   {
         String[] palabras = cadena.trim().split("\\s+");
