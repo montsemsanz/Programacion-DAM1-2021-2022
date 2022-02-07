@@ -1,0 +1,1 @@
+Colección de enteros
