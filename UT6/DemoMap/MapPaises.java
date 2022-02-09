@@ -6,9 +6,12 @@
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Set;
+import java.util.TreeSet;
 import java.util.Iterator;
 import java.util.Map;
+import java.util.TreeMap;
 import java.util.Collection;
+
 public class MapPaises
 {
 
@@ -27,7 +30,7 @@ public class MapPaises
      * 
      */
     public void addPais(String pais, String capital)    {
-        mapPaises.put(pais, capital);
+        mapPaises.put(pais.toUpperCase(), capital.toUpperCase());
 
     }
 
@@ -35,14 +38,14 @@ public class MapPaises
      * Dado un país obtener su capital
      */
     public  String capitalDe(String pais)    {
-        return mapPaises.get(pais);
+        return mapPaises.get(pais.toUpperCase());
     }
 
     /**
      * detecta si existe o no una clave en el map
      */
     public  boolean estaPais(String pais)    {
-        return mapPaises.containsKey(pais);
+        return mapPaises.containsKey(pais.toUpperCase());
     }
 
     /**
@@ -50,14 +53,14 @@ public class MapPaises
      *
      */
     public void borrarPais(String pais)    {
-        mapPaises.remove(pais);
+        mapPaises.remove(pais.toUpperCase());
     }
 
     /**
      * detecta si existe o no un valor en el map
      */
     public  boolean estaCapital(String capital)    {
-        return mapPaises.containsValue(capital);
+        return mapPaises.containsValue(capital.toUpperCase());
     }
 
     /**
@@ -77,10 +80,8 @@ public class MapPaises
         for (String pais: conjuntoPaises) {
             System.out.println(pais + " - " + mapPaises.get(pais));
         }
-   
 
     }
-
     /**
      * Mostrar cada país junto con su capital
      * Recorremos el map obteniendo el conjunto de claves (keySet)
@@ -128,6 +129,30 @@ public class MapPaises
     public Collection<String> grupoCapitales()    {
         return mapPaises.values();
     }
-
+    
+    /**
+     *  Agrupar nombres de países por letra
+     *  Cada letra con el conjunto (en oreden alfabético)
+     *  de países en esa letra
+     *  LAs letras se recuperan en orden alfabético también
+     */
+    public TreeMap<Character, TreeSet<String>> agruparPorLetra()    {
+        TreeMap<Character, TreeSet<String>> paisesPorLetra = new TreeMap<>();
+        Set<String> paises = mapPaises.keySet();
+        for (String pais: paises) {
+            char letra = pais.charAt(0);
+            if (paisesPorLetra.containsKey(letra)) {
+                paisesPorLetra.get(letra).add(pais);
+            }
+            else {
+                TreeSet<String> nombres = new TreeSet<>();
+                nombres.add(pais);
+                paisesPorLetra.put(letra, nombres);
+            }
+            
+        }
+        return paisesPorLetra;
+        
+    }
 
 }
