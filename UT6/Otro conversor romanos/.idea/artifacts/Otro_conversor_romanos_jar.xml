@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" build-on-make="true" name="Otro conversor romanos:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/Otro_conversor_romanos_jar</output-path>
+    <root id="archive" name="otroconversor.jar">
+      <element id="module-output" name="Otro conversor romanos" />
+    </root>
+  </artifact>
+</component>
