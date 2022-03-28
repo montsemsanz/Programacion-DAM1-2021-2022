@@ -175,21 +175,6 @@ public class EjemplosUT8
 
     }
 
-    /**
-     * 
-     */
-    public static void ex() {
-        String[] animales = { "caballo", "perro", "vaca", "gato", "jirafa"};
-        String str = "";
-        int c = 0;
-        for (int i = 1; i <= animales.length - 1; i++)    {
-            int p = animales[i].indexOf("a");
-            if (p >= 0)   {
-                str = str.concat(animales[i].substring(p));
-            }
-        }
-        System.out.println(c + " - " + str);
-
-    }
+    
 
 }
