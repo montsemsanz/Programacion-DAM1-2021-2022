@@ -1,0 +1,59 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+abstract  class Fichero
+enum Compresion {
+ DESCONOCIDA
+ BAJA
+ MEDIA
+ ALTA
+}
+abstract class Fichero  {
+	- String titulo
+	- int tamaño
+	+ Fichero(String titulo, int tamaño)
+    + int getTamaño()
+    + String getTitulo()
+    + void display()
+
+}
+
+ class FicheroMusica  {
+	- int duracion
+	+ FicheroMusica(String titulo, int tamaño, int duracion)
+	+ int getDuracion()
+    + void display()
+
+}
+
+ abstract class FicheroImagen {
+	+ FicheroImagen(String titulo, int tamaño)
+    + void display()
+
+}
+
+ class FicheroJPG {
+    - Compresion compresion
+	+ FicheroJPG(String titulo, int tamaño, Compresion compresion)
+    + Compresion getCompresion()
+    + void display()
+}
+
+ class ReproductorMP3 {
+    - List<Fichero> ficheros
+	+ ReproductorMP3(int tamaño)
+    + void addFichero(Fichero f)
+    + void display()
+    + int getCapacidad()
+    + void reset()
+    + void mostrarCanciones()
+    + boolean borrarFicheroImagen(String titulo)
+    + void reordenar()
+    + void ordenarPorTitulo()
+    + void ordenarPorTituloDescendente()
+    + void ordenarPorTamañoDescendente()
+    + void mostrarReproductor()
+
+
+}
+
+@enduml
