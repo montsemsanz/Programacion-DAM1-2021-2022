@@ -23,7 +23,10 @@ public class DemoListaPersonas {
         lista.leerDeFicheroDeTextoConScanner();
         System.out.println("Leído fichero con Scanner");
         lista.mostrar();
-        lista.clear();
+
+        System.out.println("----------------------");
+        lista.guardarEstadisticas();
+        System.out.println("Creado fichero con estadísticas");
 
         System.out.println("----------------------");
         lista.leerDeFicheroComoRecurso();
