@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" build-on-make="true" name="Personas:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/Personas_jar</output-path>
+    <root id="archive" name="Personas.jar">
+      <element id="module-output" name="Personas" />
+    </root>
+  </artifact>
+</component>
