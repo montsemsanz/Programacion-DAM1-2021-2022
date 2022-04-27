@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/src/ut9/contadorV1/GuiContador.java" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/src/ut9/cuadrosdialogo/EjemplosCuadrosDialogo.java" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/src/ut9/ejemplos/Ejemplo1.java" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/src/ut9/ejemplos/Ejemplo10Controles.java" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/src/ut9/ejemplos/Ejemplo10EstilosCSS.java" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/src/ut9/ejemplos/Ejemplo11VBoxHBox.java" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/src/ut9/ejemplos/Ejemplo12GridPaneHBox.java" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/src/ut9/ejemplos/Ejemplo13BorderPaneGridPane.java" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/src/ut9/ejemplos/Ejemplo14GridPane.java" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/src/ut9/ejemplos/Ejemplo15ListView.java" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/src/ut9/ejemplos/Ejemplo16VBoxAnchorPane.java" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/src/ut9/ejemplos/Ejemplo17Tab.java" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/src/ut9/ejemplos/Ejemplo18ComboBox.java" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/src/ut9/ejemplos/Ejemplo2.java" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/src/ut9/ejemplos/Ejemplo3.java" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/src/ut9/ejemplos/Ejemplo7BorderPane.java" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/src/ut9/ejemplos/Ejemplo8GridPane.java" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/src/ut9/ejemplos/Ejemplo9GridPane.java" charset="windows-1252" />
+  </component>
+</project>
