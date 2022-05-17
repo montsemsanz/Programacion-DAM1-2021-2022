@@ -1,0 +1,14 @@
+CREATE PROCEDURE `sumarEdades`(in gen varchar(1), out suma integer)
+BEGIN
+	set suma = 0; 
+	select sum(edad) from personas where genero = gen into suma;
+END
+
+
+CREATE FUNCTION `sumarEdadesFun`(gen varchar(1)) RETURNS int
+    DETERMINISTIC
+BEGIN 
+	declare suma integer default 0; 
+    select sum(edad) from personas where genero = gen into suma;
+    RETURN suma; 
+END
