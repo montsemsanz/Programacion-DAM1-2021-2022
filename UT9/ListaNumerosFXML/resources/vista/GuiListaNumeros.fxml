@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" stylesheets="@../application.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ut9.lista.controlador.ListaController">
+    <top>
+        <HBox alignment="CENTER" prefHeight="33.0" prefWidth="600.0" spacing="5.0" BorderPane.alignment="CENTER">
+            <children>
+                <Label text="Número" />
+                <TextField fx:id="txtNumero" onAction="#add" />
+            </children>
+            <padding>
+                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+            </padding>
+        </HBox>
+    </top>
+    <bottom>
+        <HBox alignment="CENTER" prefHeight="57.0" prefWidth="600.0" spacing="8.0" BorderPane.alignment="CENTER">
+            <children>
+                <Button fx:id="btnAdd" mnemonicParsing="false" onAction="#add" prefWidth="120.0" text="Añadir número" />
+                <Button fx:id="btnBorrarRepetidos" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#borrarRepetidos" prefWidth="120.0" text="Borrar repetidos" />
+                <Button fx:id="btnBorrarDePosicion" layoutX="106.0" layoutY="10.0" mnemonicParsing="false" onAction="#borrarDePosicion" prefWidth="120.0" text="Borrar de posición" />
+                <Button fx:id="btnSalvar" layoutX="202.0" layoutY="10.0" mnemonicParsing="false" onAction="#salvar" prefWidth="120.0" text="Salvar" />
+            </children>
+            <BorderPane.margin>
+                <Insets />
+            </BorderPane.margin>
+            <padding>
+                <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+            </padding>
+        </HBox>
+    </bottom>
+    <center>
+        <TextArea fx:id="area" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+    </center>
+    <padding>
+        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+    </padding>
+</BorderPane>
